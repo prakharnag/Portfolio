@@ -1,0 +1,24 @@
+/* WelcomePage.css */
+.welcome-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .welcome-page-content {
+    text-align: center;
+  }
+  
+  .welcome-page-content h1 {
+    font-size: 3rem;
+  }
+  
+  .down-arrow {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  

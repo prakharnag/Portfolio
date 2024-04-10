@@ -1,0 +1,20 @@
+/* IntroductionPage.css */
+.introduction-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .introduction-page-content {
+    text-align: center;
+  }
+  
+  .introduction-page-content h1 {
+    font-size: 3rem;
+  }
+  
+  .introduction-page-content p {
+    font-size: 1.5rem;
+  }
+  
