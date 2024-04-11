@@ -1,0 +1,19 @@
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0px 26px ;
+    margin:-35px 50px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  
+  .nav ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+  }
+  
