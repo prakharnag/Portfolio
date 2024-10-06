@@ -1,11 +1,13 @@
 // App.js
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import WelcomePage from './WelcomePage';
-import IntroductionPage from './IntroductionPage';
+//import WelcomePage from './WelcomePage';
+//mport IntroductionPage from './IntroductionPage';
+import LandingPage from './components/LandingPage';
+import Header from './components/Header';
 
 const App = () => {
-  const [showIntroduction, setShowIntroduction] = useState(false);
+  /*const [showIntroduction, setShowIntroduction] = useState(false);
   const [audioPlayed, setAudioPlayed] = useState(false);
 
   const handleDownArrowClick = () => {
@@ -22,16 +24,20 @@ const App = () => {
       console.error('Error playing audio:', error);
     });
   };
-
+*/
   return (
     <div className="App">
-      {showIntroduction ? (
-        <IntroductionPage />
-      ) : (
-        <WelcomePage onClick={handleDownArrowClick} />
-      )}
+      <Header />
+      <LandingPage />
     </div>
   );
 };
 
 export default App;
+
+
+/*{showIntroduction ? (
+  <IntroductionPage />
+) : (
+  <WelcomePage onClick={handleDownArrowClick} />
+)}*/
