@@ -1,43 +1,21 @@
 // App.js
 import React from 'react';
-import './App.css';
-//import WelcomePage from './WelcomePage';
-//mport IntroductionPage from './IntroductionPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
-import Header from './components/Header';
+import HireMe from './components/HireMe';
+//import MyWorks from './components/MyWorks'
 
-const App = () => {
-  /*const [showIntroduction, setShowIntroduction] = useState(false);
-  const [audioPlayed, setAudioPlayed] = useState(false);
-
-  const handleDownArrowClick = () => {
-    setShowIntroduction(true);
-    if (!audioPlayed) {
-      playAudio();
-      setAudioPlayed(true);
-    }
-  };
-
-  const playAudio = () => {
-    const audio = new Audio('/assets/typing.mp3'); // Adjust the path to your audio file
-    audio.play().catch(error => {
-      console.error('Error playing audio:', error);
-    });
-  };
-*/
+function App() {
   return (
-    <div className="App">
-      <Header />
-      <LandingPage />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/hire-me" element={<HireMe />} />
+        
+      </Routes>
+    </Router>
+    
   );
-};
+}
 
 export default App;
-
-
-/*{showIntroduction ? (
-  <IntroductionPage />
-) : (
-  <WelcomePage onClick={handleDownArrowClick} />
-)}*/
