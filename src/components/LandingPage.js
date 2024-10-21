@@ -1,6 +1,8 @@
 // LandingPage.js
 import React from 'react';
 import './LandingPage.css';
+import './Header.js';
+import './Header.css';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -15,6 +17,7 @@ const LandingPage = () => {
     delaySpeed: 1500, // Delay before deleting
   });
 
+  
   return (
     <div className="landing-page">
       <div className="left-section">
@@ -26,7 +29,7 @@ const LandingPage = () => {
         <div className="social-buttons">
           {/* LinkedIn button */}
           <a href="https://www.linkedin.com/in/prakhar-nag/" target="_blank" rel="noopener noreferrer">
-            < FaLinkedin alt="LinkedIn" className="social-icon" />
+            <FaLinkedin alt="LinkedIn" className="social-icon" />
           </a>
           {/* GitHub button */}
           <a href="https://github.com/prakharnag" target="_blank" rel="noopener noreferrer">
